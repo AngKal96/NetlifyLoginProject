@@ -21,3 +21,4 @@ netlifyIdentity.close();
 
 // Log out the user
 netlifyIdentity.logout();
+
