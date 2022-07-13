@@ -10,14 +10,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Tiro+Devanagari+Sanskrit&family=Titan+One&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="myScript.js"></script>
 </head>
 
 <body>
@@ -27,74 +22,43 @@
             <div class="col">
                 <img src="https://www.smartbeam.co/img/blog-hero.jpg" class="img-bg">
                 <div class="row img-content justify-content-center">
-                    <div class="col-10 pt-3">
-                        <ul class="list-inline sub-title p-2">
-                            <li class="list-inline-item px-3"><a href="#">Clean Blog</a></li>
-                            <span class="float-right topnav">
-                                <li class="list-inline-item px-4"><a href="#">HOME</a></li>
-                                <li class="list-inline-item px-4"><a href="#">ABOUT</a></li>
-                                <li class="list-inline-item px-4"><a href="#">POSTS</a></li>
-                                <li class="list-inline-item px-4"><a href="#">CONTACT</a></li>
-                            </span>
-                        </ul>
-                    </div>
-                    <div class="col pt-2">
-                        <ul class="list-inline px-3">
-                            <li class="list-inline-item px-3">
-                                <div class="topnav pt-3" data-netlify-identity-menu></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h1 class="title text-center align-center mt-5 pt-5 mb-0">Clean Blog</h1>
-                            <p class="text-center body"><b>A Blog Theme by Start Bootstrap</b></p>
+                    <div class="col pt-3">
+                        <div class="row">
+                            <div class="col-2">
+                                <ul class="list-inline sub-title p-2">
+                                    <li class="list-inline-item px-3"><a href="#">Clean Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 text-center">
+                                <ul class="list-inline topnav">
+                                    <li class="list-inline-item px-4"><a href="#">HOME</a></li>
+                                    <li class="list-inline-item px-4"><a href="#">ABOUT</a></li>
+                                    <li class="list-inline-item px-4"><a href="#">POSTS</a></li>
+                                    <li class="list-inline-item px-4"><a href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-inline px-3 float-right">
+                                    <li class="list-inline-item px-3">
+                                        <div class="topnav" data-netlify-identity-menu></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="title text-center align-center mt-5 pt-5 mb-0">Clean Blog</h1>
+                                <p class="text-center body"><b>A Blog Theme by Start Bootstrap</b></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div><br><br><br>
-        <div ng-if="isLoggedIn === true">
-            <div class="row justify-content-center mt-5 pt-5">
-                <div class="col-6 text-left">
-                    <h2>Man must explore, and this is exploration at its greatest</h2>
-                    <h3>Problems look mighty small from 150 miles up</h3>
-                    <h4><i>Posted by Start Bootstrap on January 31, 2020 . 4 mins read</i></h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5 pt-5">
-                <div class="col-6 text-left">
-                    <h2>I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2>
-                    <h3>Never in all their history have men been able truly to conceive of the world...</h3>
-                    <h4><i>Posted by Start Bootstrap on January 31, 2020 . 4 mins read</i></h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5 pt-5">
-                <div class="col-6 text-left">
-                    <h2>Science has not yet mastered prophecy</h2>
-                    <h3>We predict too much for the next year and yet far too little for the next ten.</h3>
-                    <h4><i>Posted by Start Bootstrap on January 31, 2020 . 4 mins read</i></h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5 pt-5">
-                <div class="col-6 text-left">
-                    <h2>Failure is not an option</h2>
-                    <h3>Many say exploration is part of our destiny, but it's actually our duty to future generations.</h3>
-                    <h4><i>Posted by Start Bootstrap on January 31, 2020 . 4 mins read</i></h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5 pt-5">
-                <div class="col-6 text-left blue-font">
-                    <h2>The dreams of yesterday are the hopes of today and the reality of tomorrow.</h2>
-                    <h3>Never in all their history have men been able truly to conceive of the world...</h3>
-                    <h4><i>Posted by Start Bootstrap on January 31, 2020 . 4 mins read</i></h4>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5">
-                <div class="col-6 d-flex justify-content-end">
-                    <button type="submit" class="btn">VIEW ALL POSTS &#8594;</button>
-                </div>
-            </div>
+        <!-- <div ng-view></div> -->
+        <div class="notLoggedIn">
+            <h2>Sign up or Login above to gain access to our members blogposts and other membership user tools.</h2>
+        </div>
             <footer class="mt-5 pt-5">
                 <ul class="list-inline text-center mb-3">
                     <li class="list-inline-item px-2"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></li>
@@ -105,12 +69,10 @@
                 <p class="text-center footer mb-5">Copyright &copy Start Bootstrap 2021</p>
             </footer>
         </div>
-        <div ng-if="isLoggedIn !== true">
-            Sign up or Login Below to gain access to our members blogposts and other membership user tools.
-        </div>
-    </div>
+        
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -119,7 +81,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="myScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="myScript.js"></script> -->
 </body>
 
 </html>
