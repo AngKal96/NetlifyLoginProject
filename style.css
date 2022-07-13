@@ -93,3 +93,17 @@ button {
     position: relative;
     height: 100vw;
   }
+
+
+  .icon1 {
+    color: rgb(207, 97, 83);
+  }
+  .icon2 {
+    color: rgb(86, 133, 202);
+  }
+  .icon3 {
+    color: rgb(44, 86, 148);
+  }
+  .icon4 {
+    color: black;
+  }
