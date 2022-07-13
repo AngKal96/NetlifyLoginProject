@@ -1,63 +1,41 @@
-// let app = angular.module("cleanBlog", ["ngRoute"]);
+let app = angular.module("cleanBlog", ["ngRoute"]);
 
-// app.config(function ($routeProvider) {
-//     $routeProvider
-//         .when("/", {
-//             templateUrl: "login.html",
-//         })
-//         .when("/login", {
-//             templateUrl: "login.html",
-//         })
-//         .when("/blog", {
-//             templateUrl: "blog.html",
-//         })
-// });
-
-//let user = netlifyIdentity.currentUser();
-
-netlifyIdentity.on('init', () => {
-    initUser = netlifyIdentity.currentUser();
-    //console.log(user);
+app.config(function ($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl: "login.html",
+        })
+        .when("/login", {
+            templateUrl: "login.html",
+        })
+        .when("/blog", {
+            templateUrl: "blog.html",
+        })
 });
 
 
 
-netlifyIdentity.on('login', () => {
-    if (initUser == null) {
-        window.location.replace('blog');
-    }
-    netlifyIdentity.close();
+app.controller('blogLogin', function ($scope, $http) {
+    let initUser = netlifyIdentity.currentUser();
+
+    netlifyIdentity.on('init', () => {
+        initUser = netlifyIdentity.currentUser();
+
+    });
+
+    netlifyIdentity.on('login', () => {
+        if (initUser == null) {
+            window.location.replace('#!blog');
+        }
+        netlifyIdentity.close();
+    });
+
+    netlifyIdentity.on('logout', () => {
+        netlifyIdentity.close();
+        window.location.replace('/');
+    });
 });
 
-netlifyIdentity.on('logout', () => {
-    netlifyIdentity.close();
-    window.location.replace('index');
-});
-
-
-// netlifyIdentity.open = () => {
-
-//     exports.handler = async (event, context) => {
-//         const isLoggedIn = document.querySelector(".isLoggedIn");
-//         const notLoggedIn = document.querySelector(".notLoggedIn");
-
-//         if (context.clientContext.user) {
-//             return {
-//                 statusCode: 200,
-//                 body: JSON.stringify(isLoggedIn)
-//             };
-//         }
-
-//         return {
-//             statusCode: 401,
-//             body: JSON.stringify(notLoggedIn)
-//         }
-//     };
-
-
-    // netlifyIdentity.on('init', user => {
-
-    // });
 
 
 
@@ -85,11 +63,5 @@ netlifyIdentity.on('logout', () => {
 // netlifyIdentity.logout();
 
 
-    // isLoggedIn = () => {
 
-    //     netlifyIdentity.on('login', user => {
-    //         userLoggedOn === true;
-    //     }
-    //     )
-    // };
 
