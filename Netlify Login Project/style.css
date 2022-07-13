@@ -80,4 +80,16 @@ button {
     height: 500px;
   }
 
+.img-bg-login {
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
  
+.img-content-login {
+    position: relative;
+    height: 100vw;
+  }
