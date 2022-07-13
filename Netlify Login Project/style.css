@@ -1,0 +1,83 @@
+a {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 20px;
+    color: rgb(133, 128, 128);
+}
+
+.blue-font {
+    color: rgb(76, 158, 190);
+}
+
+.footer {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 10px;
+    color: rgb(133, 128, 128);
+}
+
+button {
+    background-color: rgb(76, 158, 190) !important;
+    color: white !important;
+    border-radius: 0px !important;
+  }
+
+.body {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.title {
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    color: white;
+}
+
+.sub-title {
+    font-family: 'Titan One', cursive;
+    font-size: 30px;
+}
+
+.topnav {
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+}
+
+.img-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .img-bg {
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-content {
+    position: relative;
+    height: 500px;
+  }
+
+ 
